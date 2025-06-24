@@ -1,2 +1,53 @@
 # PBEL
 IBM Internship
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Wikipedia Page</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Wikipedia Page Sample</h1>
+        <p><em>From Wikipedia, the free encyclopedia</em></p>
+        <hr>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#history">History</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#see-also">See also</a></li>
+        </ul>
+    </nav>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="Wikipedia Logo" width="500" height="300" title="Wikipedia">
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>This article is a mock-up created purely with HTML tags. It's meant to simulate the structure of a Wikipedia article.</p>
+    </section>
+
+    <section id="history">
+        <h2>History</h2>
+        <p>The origins of Wikipedia date back to 2001 when it was launched as a free and collaborative online encyclopedia project.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Open editing by the public</li>
+            <li>Extensive referencing and citations</li>
+            <li>Multilingual content</li>
+        </ul>
+    </section>
+
+    <section id="see-also">
+        <h2>See Also</h2>
+        <ul>
+            <li><a href="#">Encyclopedia</a></li>
+            <li><a href="#">Open-source projects</a></li>
+        </ul>
+    </section>
+</body>
+</html>
