@@ -2,50 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Example Wikipedia Page</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/CSS/style2.css">
 </head>
 <body>
-    <header>
-        <h1>Wikipedia Page Sample</h1>
-        <p><em>From Wikipedia, the free encyclopedia</em></p>
-        <hr>
-    </header>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Username">
 
-    <nav>
-        <ul>
-            <li><a href="#history">History</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#see-also">See also</a></li>
-        </ul>
-    </nav>
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="Wikipedia Logo" width="500" height="300" title="Wikipedia">
-
-    <section id="introduction">
-        <h2>Introduction</h2>
-        <p>This article is a mock-up created purely with HTML tags. It's meant to simulate the structure of a Wikipedia article.</p>
-    </section>
-
-    <section id="history">
-        <h2>History</h2>
-        <p>The origins of Wikipedia date back to 2001 when it was launched as a free and collaborative online encyclopedia project.</p>
-    </section>
-
-    <section id="features">
-        <h2>Features</h2>
-        <ul>
-            <li>Open editing by the public</li>
-            <li>Extensive referencing and citations</li>
-            <li>Multilingual content</li>
-        </ul>
-    </section>
-
-    <section id="see-also">
-        <h2>See Also</h2>
-        <ul>
-            <li><a href="#">Encyclopedia</a></li>
-            <li><a href="#">Open-source projects</a></li>
-        </ul>
-    </section>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Password">
+             <div class="rme">
+                <div>
+                   <label for="remember">Remember me</label>
+                   <input type="checkbox" id="remember" name="remember">
+                   </div>
+                   <span><a href="#">Forget Password</a></span>
+                </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 </html>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/27796917/pexels-photo-27796917.jpeg);
+    background-size: cover;
+}
+
+.login-container {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.login-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.rme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
